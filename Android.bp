@@ -1,0 +1,35 @@
+// Auto-generated Blueprint for system/core/storaged (framework AIDL)
+
+package {
+    default_applicable_licenses: ["aidl_system_core_storaged_license"],
+}
+
+license {
+    name: "aidl_system_core_storaged_license",
+    visibility: [":__subpackages__"],
+    license_kinds: ["SPDX-license-identifier-Apache-2.0"],
+    license_text: ["NOTICE"],
+}
+
+// AIDL interface between storaged and framework.jar
+filegroup {
+    name: "storaged_aidl",
+    srcs: [
+        "binder/android/os/IStoraged.aidl",
+    ],
+    path: "binder",
+    visibility: [
+        "//visibility:public",
+    ],
+}
+
+filegroup {
+    name: "storaged_aidl_private",
+    srcs: [
+        "binder/android/os/storaged/IStoragedPrivate.aidl",
+    ],
+    path: "binder",
+    visibility: [
+        "//visibility:public",
+    ],
+}
