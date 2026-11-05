@@ -12,12 +12,13 @@ license {
 }
 
 // AIDL interface between storaged and framework.jar
+// Pre-generated Java from AIDL — zero AIDL compilation at platform build time
 filegroup {
     name: "storaged_aidl",
     srcs: [
-        "binder/android/os/IStoraged.aidl",
+        "aidl-gen/storaged/**/*.java",
     ],
-    path: "binder",
+    path: "aidl-gen/storaged",
     visibility: [
         "//visibility:public",
     ],
